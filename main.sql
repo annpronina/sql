@@ -1,5 +1,5 @@
 -- use sakila;
 -- select * from address;
 
-use sql_store;
-select * from  customers;
+-- use sql_store; 
+SELECT 2*4, "result"
