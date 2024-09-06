@@ -8,3 +8,6 @@
 -- from customers;
 
 SELECT DISTINCT state from customers; 
+
+SELECT * FROM customers
+limit 5;
