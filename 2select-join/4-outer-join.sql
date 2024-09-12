@@ -1,26 +1,31 @@
-use sql_store;
+-- use sql_store;
 
--- inner join
+-- -- inner join
 
-SELECT * FROM
-    orders o
-		JOIN
-    customers c USING (customer_id);
+-- SELECT * FROM
+--     orders o
+-- 		JOIN
+--     customers c USING (customer_id);
+--     
+--     
+-- -- left outer join
+-- SELECT * FROM
+--     orders o
+-- 		LEFT JOIN
+--     customers c USING (customer_id);
+--     
+--     -- right outer join
+-- SELECT * FROM
+--     customers c
+-- 		RIGHT JOIN
+--     orders o USING (customer_id);
     
+    -- uzdevums;
+    -- atlasit produktus un pasutijuma vienibas
+    -- taa, lai tiktu atlasiti visi produkti
+    -- arii tadi, kuri nav pasutiti 
     
--- left outer join
-SELECT * FROM
-    orders o
-		LEFT JOIN
-    customers c USING (customer_id);
-    
-    -- right outer join
-SELECT * FROM
-    customers c
-		RIGHT JOIN
-    orders o USING (customer_id);
-
-
-
-
-
+    SELECT * FROM products p
+	RIGHT JOIN 
+    order_items o USING(product_id)
+   
