@@ -3,8 +3,8 @@
 -- Atlasi visus datus no 'sql_hr' 
 -- datubaazes 'employees' tabulas
 
--- use sql_hr;
--- SELECT * FROM employees
+ -- use sql_hr;
+	SELECT * FROM employees
 
 -- 2. uzdevums 
 -- Atlasit visu klientu vardus no 'sql_store' datubazes 
@@ -25,8 +25,9 @@
  -- Atlasi visus sutijumus no 'sql_store', kuru statuss
  -- ir "Processed" 
  
--- use sql_store
---  SELECT 
---     *
+ -- SELECT 
+-- 	order_id, customer_id, name
 -- FROM
---     orders
+   --  orders
+-- join order_statuses
+	-- on orders.status = order_statuses.order_status_id;
