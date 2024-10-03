@@ -5,3 +5,6 @@ create user php_app@localhost identified by '1234';
 
 GRANT ALL privileges on sql_store.* to php_app@localhost;
 FLUSH privileges; -- parliecinamies ka nebus nekadas problemas datubazee 
+
+GRANT ALL privileges on sql_hr.* to php_app@localhost;
+FLUSH privileges; 

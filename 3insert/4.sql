@@ -19,4 +19,7 @@ VALUES
     (last_insert_id(), 2, 3, 5);
     
     SELECT * FROM order_items;
+     SELECT * FROM customers
+    WHERE customer_id IN (1, 7, 12);
+
     
